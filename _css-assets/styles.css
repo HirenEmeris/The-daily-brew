@@ -1,0 +1,921 @@
+/* ============================================================
+   THE DAILY BREW - STYLES
+   ============================================================ */
+
+/* 
+   This stylesheet controls the overall look and layout
+   of The Daily Brew website.
+*/
+
+
+/* ============================================================
+   LU6 JAVASCRIPT PROJECT
+   ============================================================ */
+
+/* Multi-page website */
+
+
+/* ============================================================
+   1. RESET & BASE STYLES
+   ============================================================ */
+
+/* 
+   The universal selector applies these settings to every
+   element on the page. This helps keep spacing consistent
+   between different browsers.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+   Basic styling for the entire page.
+*/
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #1a1a2e;
+    background-color: #f8f6f3;
+}
+
+
+/* 
+   Headings use a different font to give the website
+   a more elegant coffee-shop style.
+*/
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+}
+
+
+/* 
+   Images should not become wider than the element
+   containing them.
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 
+   Remove the default underline from links.
+   The links will be styled further down.
+*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* 
+   .container is used to keep the content from stretching
+   across the entire screen on larger devices.
+*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ============================================================
+   2. HEADER
+   ============================================================ */
+
+
+/* 
+   The header contains the logo, website name and navigation.
+
+   position: sticky keeps the header visible near the top
+   while the user scrolls through the page.
+*/
+
+header {
+    background: #2c1810;
+    color: white;
+    padding: 20px 0;
+
+    /* Keeps the header at the top when scrolling */
+    position: sticky;
+    top: 0;
+
+    /* Makes sure the header stays above other content */
+    z-index: 100;
+
+    /* Adds a small shadow underneath the header */
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+
+/* 
+   The header container uses Flexbox so that the logo
+   and navigation can sit next to each other.
+*/
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* 
+   The logo area contains the logo image and website name.
+*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* 
+   Controls the size of the logo image.
+*/
+
+.logo-img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+
+/* 
+   Website name displayed next to the logo.
+*/
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+/* 
+   Smaller text underneath or next to the main logo.
+*/
+
+.tagline {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+}
+
+
+/* 
+   The navigation list is displayed horizontally using Flexbox.
+*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+
+/* 
+   Basic styling for the navigation links.
+*/
+
+nav a {
+    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    /* Adds space around the link without changing its size */
+    padding: 8px 0;
+
+    /* 
+       Transparent border is added here so the layout does
+       not move when the hover border appears.
+    */
+    border-bottom: 2px solid transparent;
+}
+
+
+/* 
+   When the mouse is placed over a navigation link,
+   the text becomes brighter and a bottom border appears.
+*/
+
+nav a:hover {
+    color: white;
+    border-bottom: 2px solid #d4a373;
+}
+
+
+/* ============================================================
+   3. HERO
+   ============================================================ */
+
+
+/* 
+   The hero is the large section users see near the
+   top of the page.
+*/
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #2c1810 0%,
+        #4a2c1a 50%,
+        #6b3f2a 100%
+    );
+
+    color: white;
+    padding: 80px 0;
+}
+
+
+/* 
+   Flexbox places the hero text and hero image next
+   to each other.
+*/
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+/* 
+   Allows the text section to take up available space.
+*/
+
+.hero-content {
+    flex: 1;
+}
+
+
+/* 
+   Main heading inside the hero section.
+*/
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+    /* Makes the heading easier to see against the background */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+
+/* 
+   Supporting paragraph underneath the main hero heading.
+*/
+
+.hero-content p {
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+
+/* 
+   Displays the date or other small information in
+   the hero section.
+*/
+
+.date-display {
+    font-size: 16px;
+    color: #d4a373;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+/* 
+   Controls the width of the hero image area.
+*/
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+/* 
+   Styles the actual image inside the hero section.
+*/
+
+.hero-image img {
+    border-radius: 16px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+}
+
+
+/* ============================================================
+   4. BUTTONS
+   ============================================================ */
+
+
+/* 
+   Main button used throughout the website.
+*/
+
+.btn-primary {
+    background: #d4a373;
+    color: #2c1810;
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+
+    /* Allows padding and other dimensions to work correctly */
+    display: inline-block;
+
+    /* Makes hover changes happen smoothly */
+    transition: all 0.3s ease;
+}
+
+
+/* 
+   Changes the main button when the user hovers over it.
+*/
+
+.btn-primary:hover {
+    background: #c49463;
+
+    /* Moves the button slightly upwards */
+    transform: translateY(-3px);
+
+    /* Adds a soft glow underneath */
+    box-shadow: 0 8px 25px rgba(212, 163, 115, 0.4);
+}
+
+
+/* 
+   Submit button used for the contact form.
+*/
+
+.btn-submit {
+    background: #2c1810;
+    color: white;
+    padding: 14px 40px;
+
+    /* Removes the browser's default button border */
+    border: none;
+
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    /* Shows the pointer cursor when hovering */
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    /* Makes the button fill the available form width */
+    width: 100%;
+}
+
+
+/* 
+   Hover effect for the contact form button.
+*/
+
+.btn-submit:hover {
+    background: #4a2c1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(44, 24, 16, 0.3);
+}
+
+
+/* ============================================================
+   5. SECTIONS
+   ============================================================ */
+
+
+/* 
+   Main heading used for sections such as Menu, Gallery
+   and Contact.
+*/
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c1810;
+}
+
+
+/* 
+   Smaller description underneath section headings.
+*/
+
+.section-subtitle {
+    text-align: center;
+    color: #6c6c8e;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+
+/* 
+   Adds vertical spacing to the main content sections.
+*/
+
+.menu, .gallery, .contact {
+    padding: 80px 0;
+}
+
+
+/* 
+   The About section uses a white background to separate
+   it from the other sections.
+*/
+
+.about {
+    background: white;
+    padding: 80px 0;
+}
+
+
+/* ============================================================
+   6. MENU GRID
+   ============================================================ */
+
+
+/* 
+   The menu uses CSS Grid.
+
+   repeat(4, 1fr) creates four equal-width columns.
+*/
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+/* 
+   Individual menu cards.
+*/
+
+.menu-item {
+    background: white;
+    border-radius: 16px;
+
+    /* Prevents content from going outside rounded corners */
+    overflow: hidden;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* 
+   Moves the menu card slightly upwards when hovered.
+*/
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+
+/* 
+   Images inside the menu cards all have the same height.
+   object-fit: cover prevents the images from looking stretched.
+*/
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* 
+   Menu item name.
+*/
+
+.menu-item h3 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+    color: #2c1810;
+}
+
+
+/* 
+   Price displayed underneath each menu item.
+*/
+
+.menu-item .price {
+    color: #d4a373;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/* ============================================================
+   7. ABOUT
+   ============================================================ */
+
+
+/* 
+   Keeps the About section content at a readable width
+   instead of allowing it to become too wide.
+*/
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* 
+   Main image used in the About section.
+*/
+
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    /* Centres the image and adds space below it */
+    margin: 0 auto 30px;
+}
+
+
+/* 
+   About section heading.
+*/
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c1810;
+}
+
+
+/* 
+   Paragraph text in the About section.
+*/
+
+.about-content p {
+    font-size: 18px;
+    color: #4a4a6a;
+    margin-bottom: 20px;
+}
+
+
+/* 
+   Statistics are placed next to each other using Flexbox.
+*/
+
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+
+/* 
+   Each individual statistic is centred.
+*/
+
+.stat {
+    text-align: center;
+}
+
+
+/* 
+   The large number in each statistic.
+*/
+
+.stat-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #d4a373;
+}
+
+
+/* 
+   Text underneath each statistic.
+*/
+
+.stat-label {
+    font-size: 14px;
+    color: #6c6c8e;
+}
+
+
+/* ============================================================
+   8. GALLERY
+   ============================================================ */
+
+
+/* 
+   Gallery images are arranged using CSS Grid.
+   Four equal columns are displayed on larger screens.
+*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* 
+   Individual gallery images.
+*/
+
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+
+    /* Shows that the image can be clicked */
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* 
+   Slightly enlarges the gallery image when hovered.
+*/
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+
+/* ============================================================
+   9. CONTACT FORM
+   ============================================================ */
+
+
+/* 
+   Gives the contact section a light background so that
+   the form stands out from the page.
+*/
+
+.contact {
+    background: #f8f6f3;
+}
+
+
+/* 
+   Controls the size and appearance of the contact form.
+*/
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+
+/* 
+   Adds spacing between each form field.
+*/
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* 
+   Labels are displayed above their input fields.
+*/
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2c1810;
+}
+
+
+/* 
+   Common styling for the text inputs and textarea.
+*/
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e8e8f0;
+    border-radius: 8px;
+
+    /* Keeps the form fields consistent with the rest of the website */
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+
+/* 
+   Changes the input when the user clicks into it.
+   :focus is activated when an element is selected.
+*/
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d4a373;
+
+    /* Removes the browser's default focus outline */
+    outline: none;
+
+    background: white;
+
+    /* Adds a subtle glow around the active field */
+    box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.1);
+}
+
+
+/* 
+   Area where JavaScript can display a success or error
+   message after the form is submitted.
+*/
+
+.form-feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+
+    /* Keeps some space available even when there is no message */
+    min-height: 30px;
+}
+
+
+/* ============================================================
+   10. FOOTER
+   ============================================================ */
+
+
+/* 
+   Footer styling at the bottom of the page.
+*/
+
+footer {
+    background: #2c1810;
+    color: rgba(255,255,255,0.6);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   11. RESPONSIVE
+   ============================================================ */
+
+
+/* 
+   These styles apply when the screen is 768px wide or smaller.
+
+   This is useful for tablets and smaller devices.
+*/
+
+@media screen and (max-width: 768px) {
+
+    /* 
+       Stack the header contents vertically on smaller screens.
+    */
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    /* 
+       Allow navigation links to move onto another line
+       if there isn't enough space.
+    */
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* 
+       Stack the hero text and image vertically instead
+       of keeping them next to each other.
+    */
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* 
+       Reduce the size of the hero heading on smaller screens.
+    */
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* 
+       Centre the hero paragraph.
+    */
+
+    .hero-content p {
+        margin: 0 auto 20px;
+    }
+
+
+    /* 
+       Reduce the menu from four columns to two columns.
+    */
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* 
+       Reduce the gallery from four columns to two columns.
+    */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* 
+   Extra responsive styles for very small screens,
+   such as mobile phones.
+*/
+
+@media screen and (max-width: 480px) {
+
+    /* 
+       Display one menu item per row.
+    */
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* 
+       Display one gallery image per row.
+    */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* 
+       Stack the statistics vertically so they fit
+       comfortably on a narrow screen.
+    */
+
+    .about-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* 
+       Make the hero heading smaller on very small screens.
+    */
+
+    .hero-content h2 {
+        font-size: 26px;
+    }
+}
