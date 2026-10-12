@@ -26,9 +26,9 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 
@@ -37,11 +37,11 @@
 */
 
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #1a1a2e;
-    background-color: #f8f6f3;
+   font-family: 'Inter', Arial, sans-serif;
+   font-weight: 400;
+   line-height: 1.7;
+   color: #1a1a2e;
+   background-color: #f8f6f3;
 }
 
 
@@ -50,9 +50,12 @@ body {
    a more elegant coffee-shop style.
 */
 
-h1, h2, h3, h4 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4 {
+   font-family: 'Playfair Display', Georgia, serif;
+   font-weight: 700;
 }
 
 
@@ -62,9 +65,9 @@ h1, h2, h3, h4 {
 */
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+   max-width: 100%;
+   height: auto;
+   display: block;
 }
 
 
@@ -74,8 +77,8 @@ img {
 */
 
 a {
-    color: inherit;
-    text-decoration: none;
+   color: inherit;
+   text-decoration: none;
 }
 
 
@@ -85,9 +88,9 @@ a {
 */
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
 }
 
 
@@ -104,19 +107,19 @@ a {
 */
 
 header {
-    background: #2c1810;
-    color: white;
-    padding: 20px 0;
+   background: #2c1810;
+   color: white;
+   padding: 20px 0;
 
-    /* Keeps the header at the top when scrolling */
-    position: sticky;
-    top: 0;
+   /* Keeps the header at the top when scrolling */
+   position: sticky;
+   top: 0;
 
-    /* Makes sure the header stays above other content */
-    z-index: 100;
+   /* Makes sure the header stays above other content */
+   z-index: 100;
 
-    /* Adds a small shadow underneath the header */
-    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+   /* Adds a small shadow underneath the header */
+   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -126,10 +129,10 @@ header {
 */
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
 }
 
 
@@ -138,9 +141,9 @@ header .container {
 */
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+   display: flex;
+   align-items: center;
+   gap: 15px;
 }
 
 
@@ -149,9 +152,9 @@ header .container {
 */
 
 .logo-img {
-    width: 110px;
-    height: 110px;
-    object-fit: contain;
+   width: 110px;
+   height: 110px;
+   object-fit: contain;
 }
 
 
@@ -160,8 +163,8 @@ header .container {
 */
 
 .logo h1 {
-    font-size: 24px;
-    letter-spacing: 1px;
+   font-size: 24px;
+   letter-spacing: 1px;
 }
 
 
@@ -170,9 +173,9 @@ header .container {
 */
 
 .tagline {
-    font-size: 12px;
-    color: rgba(255,255,255,0.6);
-    font-weight: 300;
+   font-size: 12px;
+   color: rgba(255, 255, 255, 0.6);
+   font-weight: 300;
 }
 
 
@@ -181,9 +184,9 @@ header .container {
 */
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+   list-style: none;
+   display: flex;
+   gap: 30px;
 }
 
 
@@ -192,18 +195,18 @@ nav ul {
 */
 
 nav a {
-    color: rgba(255,255,255,0.8);
-    font-weight: 600;
-    transition: all 0.3s ease;
+   color: rgba(255, 255, 255, 0.8);
+   font-weight: 600;
+   transition: all 0.3s ease;
 
-    /* Adds space around the link without changing its size */
-    padding: 8px 0;
+   /* Adds space around the link without changing its size */
+   padding: 8px 0;
 
-    /* 
+   /* 
        Transparent border is added here so the layout does
        not move when the hover border appears.
     */
-    border-bottom: 2px solid transparent;
+   border-bottom: 2px solid transparent;
 }
 
 
@@ -213,8 +216,8 @@ nav a {
 */
 
 nav a:hover {
-    color: white;
-    border-bottom: 2px solid #d4a373;
+   color: white;
+   border-bottom: 2px solid #d4a373;
 }
 
 
@@ -229,15 +232,13 @@ nav a:hover {
 */
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        #2c1810 0%,
-        #4a2c1a 50%,
-        #6b3f2a 100%
-    );
+   background: linear-gradient(135deg,
+         #2c1810 0%,
+         #4a2c1a 50%,
+         #6b3f2a 100%);
 
-    color: white;
-    padding: 80px 0;
+   color: white;
+   padding: 80px 0;
 }
 
 
@@ -247,10 +248,10 @@ nav a:hover {
 */
 
 .hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 50px;
 }
 
 
@@ -259,7 +260,7 @@ nav a:hover {
 */
 
 .hero-content {
-    flex: 1;
+   flex: 1;
 }
 
 
@@ -268,11 +269,11 @@ nav a:hover {
 */
 
 .hero-content h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+   font-size: 48px;
+   margin-bottom: 20px;
 
-    /* Makes the heading easier to see against the background */
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+   /* Makes the heading easier to see against the background */
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -281,10 +282,10 @@ nav a:hover {
 */
 
 .hero-content p {
-    font-size: 20px;
-    color: rgba(255,255,255,0.8);
-    max-width: 500px;
-    margin-bottom: 20px;
+   font-size: 20px;
+   color: rgba(255, 255, 255, 0.8);
+   max-width: 500px;
+   margin-bottom: 20px;
 }
 
 
@@ -294,10 +295,10 @@ nav a:hover {
 */
 
 .date-display {
-    font-size: 16px;
-    color: #d4a373;
-    font-weight: 600;
-    margin-bottom: 30px;
+   font-size: 16px;
+   color: #d4a373;
+   font-weight: 600;
+   margin-bottom: 30px;
 }
 
 
@@ -306,8 +307,8 @@ nav a:hover {
 */
 
 .hero-image {
-    flex: 1;
-    max-width: 500px;
+   flex: 1;
+   max-width: 500px;
 }
 
 
@@ -316,8 +317,8 @@ nav a:hover {
 */
 
 .hero-image img {
-    border-radius: 16px;
-    box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+   border-radius: 16px;
+   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -331,18 +332,18 @@ nav a:hover {
 */
 
 .btn-primary {
-    background: #d4a373;
-    color: #2c1810;
-    padding: 14px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
+   background: #d4a373;
+   color: #2c1810;
+   padding: 14px 35px;
+   border-radius: 50px;
+   text-decoration: none;
+   font-weight: 700;
 
-    /* Allows padding and other dimensions to work correctly */
-    display: inline-block;
+   /* Allows padding and other dimensions to work correctly */
+   display: inline-block;
 
-    /* Makes hover changes happen smoothly */
-    transition: all 0.3s ease;
+   /* Makes hover changes happen smoothly */
+   transition: all 0.3s ease;
 }
 
 
@@ -351,13 +352,13 @@ nav a:hover {
 */
 
 .btn-primary:hover {
-    background: #c49463;
+   background: #c49463;
 
-    /* Moves the button slightly upwards */
-    transform: translateY(-3px);
+   /* Moves the button slightly upwards */
+   transform: translateY(-3px);
 
-    /* Adds a soft glow underneath */
-    box-shadow: 0 8px 25px rgba(212, 163, 115, 0.4);
+   /* Adds a soft glow underneath */
+   box-shadow: 0 8px 25px rgba(212, 163, 115, 0.4);
 }
 
 
@@ -366,24 +367,24 @@ nav a:hover {
 */
 
 .btn-submit {
-    background: #2c1810;
-    color: white;
-    padding: 14px 40px;
+   background: #2c1810;
+   color: white;
+   padding: 14px 40px;
 
-    /* Removes the browser's default button border */
-    border: none;
+   /* Removes the browser's default button border */
+   border: none;
 
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 600;
+   border-radius: 50px;
+   font-size: 16px;
+   font-weight: 600;
 
-    /* Shows the pointer cursor when hovering */
-    cursor: pointer;
+   /* Shows the pointer cursor when hovering */
+   cursor: pointer;
 
-    transition: all 0.3s ease;
+   transition: all 0.3s ease;
 
-    /* Makes the button fill the available form width */
-    width: 100%;
+   /* Makes the button fill the available form width */
+   width: 100%;
 }
 
 
@@ -392,9 +393,9 @@ nav a:hover {
 */
 
 .btn-submit:hover {
-    background: #4a2c1a;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(44, 24, 16, 0.3);
+   background: #4a2c1a;
+   transform: translateY(-2px);
+   box-shadow: 0 8px 25px rgba(44, 24, 16, 0.3);
 }
 
 
@@ -409,10 +410,10 @@ nav a:hover {
 */
 
 .section-title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #2c1810;
+   font-size: 36px;
+   text-align: center;
+   margin-bottom: 10px;
+   color: #2c1810;
 }
 
 
@@ -421,10 +422,10 @@ nav a:hover {
 */
 
 .section-subtitle {
-    text-align: center;
-    color: #6c6c8e;
-    font-size: 18px;
-    margin-bottom: 50px;
+   text-align: center;
+   color: #6c6c8e;
+   font-size: 18px;
+   margin-bottom: 50px;
 }
 
 
@@ -432,8 +433,10 @@ nav a:hover {
    Adds vertical spacing to the main content sections.
 */
 
-.menu, .gallery, .contact {
-    padding: 80px 0;
+.menu,
+.gallery,
+.contact {
+   padding: 80px 0;
 }
 
 
@@ -443,8 +446,8 @@ nav a:hover {
 */
 
 .about {
-    background: white;
-    padding: 80px 0;
+   background: white;
+   padding: 80px 0;
 }
 
 
@@ -460,9 +463,9 @@ nav a:hover {
 */
 
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
 }
 
 
@@ -471,16 +474,16 @@ nav a:hover {
 */
 
 .menu-item {
-    background: white;
-    border-radius: 16px;
+   background: white;
+   border-radius: 16px;
 
-    /* Prevents content from going outside rounded corners */
-    overflow: hidden;
+   /* Prevents content from going outside rounded corners */
+   overflow: hidden;
 
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    text-align: center;
-    padding-bottom: 20px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+   transition: all 0.3s ease;
+   text-align: center;
+   padding-bottom: 20px;
 }
 
 
@@ -489,8 +492,8 @@ nav a:hover {
 */
 
 .menu-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+   transform: translateY(-8px);
+   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -500,9 +503,9 @@ nav a:hover {
 */
 
 .menu-item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
 }
 
 
@@ -511,9 +514,9 @@ nav a:hover {
 */
 
 .menu-item h3 {
-    font-size: 20px;
-    margin: 15px 0 5px;
-    color: #2c1810;
+   font-size: 20px;
+   margin: 15px 0 5px;
+   color: #2c1810;
 }
 
 
@@ -522,9 +525,9 @@ nav a:hover {
 */
 
 .menu-item .price {
-    color: #d4a373;
-    font-weight: 700;
-    font-size: 18px;
+   color: #d4a373;
+   font-weight: 700;
+   font-size: 18px;
 }
 
 
@@ -539,9 +542,9 @@ nav a:hover {
 */
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+   max-width: 800px;
+   margin: 0 auto;
+   text-align: center;
 }
 
 
@@ -550,14 +553,14 @@ nav a:hover {
 */
 
 .about-img {
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 16px;
+   width: 100%;
+   max-width: 600px;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 16px;
 
-    /* Centres the image and adds space below it */
-    margin: 0 auto 30px;
+   /* Centres the image and adds space below it */
+   margin: 0 auto 30px;
 }
 
 
@@ -566,9 +569,9 @@ nav a:hover {
 */
 
 .about-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2c1810;
+   font-size: 36px;
+   margin-bottom: 20px;
+   color: #2c1810;
 }
 
 
@@ -577,9 +580,9 @@ nav a:hover {
 */
 
 .about-content p {
-    font-size: 18px;
-    color: #4a4a6a;
-    margin-bottom: 20px;
+   font-size: 18px;
+   color: #4a4a6a;
+   margin-bottom: 20px;
 }
 
 
@@ -588,10 +591,10 @@ nav a:hover {
 */
 
 .about-stats {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    margin-top: 40px;
+   display: flex;
+   justify-content: space-around;
+   gap: 40px;
+   margin-top: 40px;
 }
 
 
@@ -600,7 +603,7 @@ nav a:hover {
 */
 
 .stat {
-    text-align: center;
+   text-align: center;
 }
 
 
@@ -609,10 +612,10 @@ nav a:hover {
 */
 
 .stat-number {
-    display: block;
-    font-size: 36px;
-    font-weight: 700;
-    color: #d4a373;
+   display: block;
+   font-size: 36px;
+   font-weight: 700;
+   color: #d4a373;
 }
 
 
@@ -621,8 +624,8 @@ nav a:hover {
 */
 
 .stat-label {
-    font-size: 14px;
-    color: #6c6c8e;
+   font-size: 14px;
+   color: #6c6c8e;
 }
 
 
@@ -637,9 +640,9 @@ nav a:hover {
 */
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
 }
 
 
@@ -648,15 +651,15 @@ nav a:hover {
 */
 
 .gallery-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 12px;
 
-    /* Shows that the image can be clicked */
-    cursor: pointer;
+   /* Shows that the image can be clicked */
+   cursor: pointer;
 
-    transition: all 0.3s ease;
+   transition: all 0.3s ease;
 }
 
 
@@ -665,8 +668,8 @@ nav a:hover {
 */
 
 .gallery-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+   transform: scale(1.05);
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -681,7 +684,7 @@ nav a:hover {
 */
 
 .contact {
-    background: #f8f6f3;
+   background: #f8f6f3;
 }
 
 
@@ -690,12 +693,12 @@ nav a:hover {
 */
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+   max-width: 600px;
+   margin: 0 auto;
+   background: white;
+   padding: 40px;
+   border-radius: 16px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -704,7 +707,7 @@ nav a:hover {
 */
 
 .form-group {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 
@@ -713,10 +716,10 @@ nav a:hover {
 */
 
 .form-group label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: #2c1810;
+   display: block;
+   font-weight: 600;
+   margin-bottom: 6px;
+   color: #2c1810;
 }
 
 
@@ -726,17 +729,17 @@ nav a:hover {
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e8e8f0;
-    border-radius: 8px;
+   width: 100%;
+   padding: 12px 16px;
+   border: 2px solid #e8e8f0;
+   border-radius: 8px;
 
-    /* Keeps the form fields consistent with the rest of the website */
-    font-family: 'Inter', Arial, sans-serif;
-    font-size: 16px;
+   /* Keeps the form fields consistent with the rest of the website */
+   font-family: 'Inter', Arial, sans-serif;
+   font-size: 16px;
 
-    transition: all 0.3s ease;
-    background: #fafafa;
+   transition: all 0.3s ease;
+   background: #fafafa;
 }
 
 
@@ -747,15 +750,15 @@ nav a:hover {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #d4a373;
+   border-color: #d4a373;
 
-    /* Removes the browser's default focus outline */
-    outline: none;
+   /* Removes the browser's default focus outline */
+   outline: none;
 
-    background: white;
+   background: white;
 
-    /* Adds a subtle glow around the active field */
-    box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.1);
+   /* Adds a subtle glow around the active field */
+   box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.1);
 }
 
 
@@ -765,12 +768,12 @@ nav a:hover {
 */
 
 .form-feedback {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 600;
+   text-align: center;
+   margin-top: 20px;
+   font-weight: 600;
 
-    /* Keeps some space available even when there is no message */
-    min-height: 30px;
+   /* Keeps some space available even when there is no message */
+   min-height: 30px;
 }
 
 
@@ -784,11 +787,11 @@ nav a:hover {
 */
 
 footer {
-    background: #2c1810;
-    color: rgba(255,255,255,0.6);
-    padding: 30px 0;
-    text-align: center;
-    font-size: 14px;
+   background: #2c1810;
+   color: rgba(255, 255, 255, 0.6);
+   padding: 30px 0;
+   text-align: center;
+   font-size: 14px;
 }
 
 
@@ -805,75 +808,119 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    /* 
+   /* 
        Stack the header contents vertically on smaller screens.
     */
 
-    header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
+   header .container {
+      flex-direction: column;
+      gap: 15px;
+   }
 
 
-    /* 
+   /* 
        Allow navigation links to move onto another line
        if there isn't enough space.
     */
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
+   nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+   }
 
 
-    /* 
+   /* 
        Stack the hero text and image vertically instead
        of keeping them next to each other.
     */
 
-    .hero .container {
-        flex-direction: column;
-        text-align: center;
-    }
+   .hero .container {
+      flex-direction: column;
+      text-align: center;
+   }
 
 
-    /* 
+   /* 
        Reduce the size of the hero heading on smaller screens.
     */
 
-    .hero-content h2 {
-        font-size: 32px;
-    }
+   .hero-content h2 {
+      font-size: 32px;
+   }
 
 
-    /* 
+   /* 
        Centre the hero paragraph.
     */
 
-    .hero-content p {
-        margin: 0 auto 20px;
-    }
+   .hero-content p {
+      margin: 0 auto 20px;
+   }
 
 
-    /* 
+   /* 
        Reduce the menu from four columns to two columns.
     */
 
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+   .menu-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
 
 
-    /* 
+   /* 
        Reduce the gallery from four columns to two columns.
     */
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+   .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
 }
 
+/* ============================================================ */
+/* SESSION 36: LIGHTBOX STYLES                                  */
+/* ============================================================ */
+
+.lightbox {
+   display: none;
+   /* Hidden by default */
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.9);
+   z-index: 1000;
+   justify-content: center;
+   align-items: center;
+}
+
+.lightbox.active {
+   display: flex;
+   /* Show when active */
+}
+
+.lightbox-image {
+   max-width: 90%;
+   max-height: 80%;
+   border-radius: 8px;
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+   position: absolute;
+   top: 20px;
+   right: 40px;
+   color: white;
+   font-size: 50px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+   color: #d4a373;
+}
 
 /* 
    Extra responsive styles for very small screens,
@@ -882,40 +929,40 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-    /* 
+   /* 
        Display one menu item per row.
     */
 
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
+   .menu-grid {
+      grid-template-columns: 1fr;
+   }
 
 
-    /* 
+   /* 
        Display one gallery image per row.
     */
 
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
+   .gallery-grid {
+      grid-template-columns: 1fr;
+   }
 
 
-    /* 
+   /* 
        Stack the statistics vertically so they fit
        comfortably on a narrow screen.
     */
 
-    .about-stats {
-        flex-direction: column;
-        gap: 20px;
-    }
+   .about-stats {
+      flex-direction: column;
+      gap: 20px;
+   }
 
 
-    /* 
+   /* 
        Make the hero heading smaller on very small screens.
     */
 
-    .hero-content h2 {
-        font-size: 26px;
-    }
+   .hero-content h2 {
+      font-size: 26px;
+   }
 }

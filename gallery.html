@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Brew - Gallery</title>
     <link rel="stylesheet" href="_css-assets/styles.css">
 </head>
+
 <body>
 
     <header>
@@ -42,11 +44,19 @@
             </div>
         </div>
     </section>
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="Lightbox image">
+    </div>
 
     <footer>
         <div class="container">
             <p>&copy; <span id="year"></span> The Daily Brew. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="_js-assets/script.js"></script>
 </body>
+
 </html>

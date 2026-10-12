@@ -34,21 +34,23 @@
             <h2 class="section-title">📬 Get In Touch</h2>
             <p class="section-subtitle">We'd love to hear from you</p>
 
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" rows="4" placeholder="Tell us what's on your mind..."></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
+<form id="contact-form" class="contact-form">
+    <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="4" placeholder="Tell us what's on your mind..."></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Send Message</button>
+</form>
+
+<div id="form-feedback" class="form-feedback"></div>
 
             <div id="form-feedback" class="form-feedback"></div>
         </div>
@@ -59,5 +61,7 @@
             <p>&copy; <span id="year"></span> The Daily Brew. All rights reserved.</p>
         </div>
     </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="_js-assets/script.js"></script>
 </body>
 </html>
