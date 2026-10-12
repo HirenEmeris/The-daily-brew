@@ -139,30 +139,8 @@ $(document).ready(function() {// Wait until the document is fully loaded
 });
 
 /* ============================================================ */
-/* SESSION 36: LIGHTBOX GALLERY                                 */
+/* LIGHTBOX GALLERY                                 */
 /* ============================================================ */
-
-$(document).ready(function() {
-    console.log("jQuery is loaded and ready!");// Log a message to the console when the document is ready
-
-    if ($("#greet-button").length) {// Check if the element with ID "greet-button" exists
-        $("#greet-button").click(function() {// Add a click event listener to the button
-            $("#greet-output").text("Welcome to The Daily Brew!");// Change the text of the element with ID "greet-output" when the button is clicked
-        });
-
-        $("#greet-button").hover(// Add a hover event listener to the button
-            function() {
-                $(this).css("background-color", "#d4a373");// Change the background color of the button when hovered over
-            },
-            function() {
-                $(this).css("background-color", "");// Reset the background color of the button when the mouse leaves
-            }
-        );
-    }
-
-    /* ======================================================== */
-    /* LIGHTBOX GALLERY                                          */
-    /* ======================================================== */
 
     if ($("#lightbox").length) {// Check if the lightbox element exists
         // When a gallery image is clicked
@@ -188,7 +166,7 @@ $(document).ready(function() {
 
 
 /* ============================================================ */
-/* SESSION 37: FORM VALIDATION + ACKNOWLEDGEMENT                */
+/*  FORM VALIDATION + ACKNOWLEDGEMENT                */
 /* ============================================================ */
 
 const contactForm = document.getElementById("contact-form");
