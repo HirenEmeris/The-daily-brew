@@ -162,7 +162,7 @@ $(document).ready(function() {// Wait until the document is fully loaded
             }
         });
     }
-});
+
 
 
 /* ============================================================ */
