@@ -922,6 +922,44 @@ footer {
    color: #d4a373;
 }
 
+
+/* ============================================================ */
+/* SESSION 38: NEWSLETTER & MAP STYLES                          */
+/* ============================================================ */
+
+.newsletter {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.newsletter h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 20px;
+}
+
+.newsletter iframe {
+    border-radius: 8px;
+    background: white;
+}
+
+.map-section {
+    padding: 40px 40px;
+}
+
+.map-section iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
 /* 
    Extra responsive styles for very small screens,
    such as mobile phones.

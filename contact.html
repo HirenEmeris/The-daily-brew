@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Brew - Contact</title>
     <link rel="stylesheet" href="_css-assets/styles.css">
 </head>
+
 <body>
 
     <header>
@@ -34,26 +36,37 @@
             <h2 class="section-title">📬 Get In Touch</h2>
             <p class="section-subtitle">We'd love to hear from you</p>
 
-<form id="contact-form" class="contact-form">
-    <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
-    </div>
-    <div class="form-group">
-        <label for="email">Your Email</label>
-        <input type="email" id="email" placeholder="Enter your email">
-    </div>
-    <div class="form-group">
-        <label for="message">Your Message</label>
-        <textarea id="message" rows="4" placeholder="Tell us what's on your mind..."></textarea>
-    </div>
-    <button type="submit" class="btn-submit">Send Message</button>
-</form>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us what's on your mind..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
 
-<div id="form-feedback" class="form-feedback"></div>
+            <div id="form-feedback" class="form-feedback"></div>
 
             <div id="form-feedback" class="form-feedback"></div>
         </div>
+    </section>
+
+
+    <!-- Google Map -->
+    <section class="map-section">
+        <h2 class="section-title">📍 Find Us</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.85412422807!2d30.9228940756175!3d-29.839632175027326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef700415046dd63%3A0x9b5193efac000621!2sEmeris%20-%20Durban%20Westville%20Campus!5e0!3m2!1sen!2sza!4v1791914891028!5m2!1sen!2sza"
+            width="100%" height="400" style="border:0;"
+            allowfullscreen="" loading="lazy">
+        </iframe>
     </section>
 
     <footer>
@@ -61,7 +74,8 @@
             <p>&copy; <span id="year"></span> The Daily Brew. All rights reserved.</p>
         </div>
     </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="_js-assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="_js-assets/script.js"></script>
 </body>
+
 </html>
