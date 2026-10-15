@@ -960,6 +960,73 @@ footer {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+/* ============================================================ */
+/* SESSION 38: SEARCH BOX STYLES                                */
+/* ============================================================ */
+
+#search-box {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #e8e8f0;
+    border-radius: 50px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+#search-box:focus {
+    border-color: #d4a373;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(212, 163, 115, 0.1);
+}
+
+/* ============================================================ */
+/* SESSION 38: MENU ACCORDION STYLES                            */
+/* ============================================================ */
+
+.menu-description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.menu-description.active {
+    max-height: 200px;
+    padding: 15px 20px;
+}
+
+.menu-description p {
+    font-size: 14px;
+    color: #4a4a6a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================================================
+   INTERACTIVE MAP
+   ============================================================ */
+
+/* Give Leaflet a visible area in which to display the map. */
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
 /* 
    Extra responsive styles for very small screens,
    such as mobile phones.

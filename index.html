@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Brew - Home</title>
     <link rel="stylesheet" href="_css-assets/styles.css">
 </head>
+
 <body>
 
     <header>
@@ -48,10 +50,20 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> The Daily Brew. All rights reserved.</p>
+            <!----Newsletter content---->
+            <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Get the latest updates on new coffee blends, special offers, and events.</p>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfqZjZRzyo6ut92BQJt6E2BB7jCKteXY_7C-h492cQWY-o_BQ/viewform?embedded=true"
+                    width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div id="newsletter-feedback" class="newsletter-feedback"></div>
+                <p>&copy; <span id="year"></span> The Daily Brew. All rights reserved.</p>
+            </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="_js-assets/script.js"></script>
 </body>
+
 </html>

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Brew - Contact</title>
+    <!-- Leaflet map styles -->
+<link rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="_css-assets/styles.css">
 </head>
 
@@ -59,7 +62,7 @@
     </section>
 
 
-    <!-- Google Map -->
+    <!-- Google Map
     <section class="map-section">
         <h2 class="section-title">📍 Find Us</h2>
         <iframe
@@ -67,15 +70,39 @@
             width="100%" height="400" style="border:0;"
             allowfullscreen="" loading="lazy">
         </iframe>
-    </section>
+    </section> -->
+
+    <!-- Interactive Map -->
+<section class="map-section">
+    <div class="container">
+
+        <h2 class="section-title">📍 Find Us</h2>
+
+        <p class="section-subtitle">
+            Explore our locations.
+        </p>
+
+        <!-- Leaflet will create the map inside this element -->
+        <div id="map"
+             aria-label="Interactive map showing our locations">
+        </div>
+
+    </div>
+</section>
 
     <footer>
         <div class="container">
             <p>&copy; <span id="year"></span> The Daily Brew. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="_js-assets/script.js"></script>
+<!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Load the Leaflet library -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Load our website's JavaScript -->
+<script src="_js-assets/script.js"></script>
 </body>
 
 </html>
