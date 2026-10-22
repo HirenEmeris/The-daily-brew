@@ -911,7 +911,7 @@ footer {
    position: absolute;
    top: 20px;
    right: 40px;
-   color: white;
+   color: white; 
    font-size: 50px;
    font-weight: bold;
    cursor: pointer;
