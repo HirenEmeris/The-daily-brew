@@ -4,6 +4,10 @@ The Daily Brew is a responsive coffee shop website created as part of a web deve
 
 The design uses warm coffee-inspired colours, large photography, responsive layouts, and simple interactive effects to create a modern café-style experience.
 
+## Changelog
+
+For a detailed record of project updates, new features, improvements, and fixes, see the [CHANGELOG.md](./changelog.md) file.
+
 ## Features
 
 - Responsive navigation bar
